@@ -1,7 +1,10 @@
-<div>
-  <ul>
-    <li *ngFor="let bill of service.bills">
-      {{bill | json}}
-    </li>
-  </ul>
+<div class="container">
+  <aside>
+    <a mat-button routerLink="/pending-bills" routerLinkActive="active">Pending Bills</a>
+    <a mat-button routerLink="/payment-history" routerLinkActive="active">Payment history</a>
+  </aside>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer>Luedch</footer>
 </div>

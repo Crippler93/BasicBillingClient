@@ -1,0 +1,32 @@
+div.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+  'aside main'
+  'footer footer';
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 20px;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+  a.active {
+    color: tomato;
+  }
+}
+
+main {
+  background-color: blue;
+  grid-area: main;
+  padding: 50px;
+}
+
+footer {
+  background-color: black;
+  grid-area: footer;
+}
