@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BillingAPIService } from './services/billing-api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BasicBilling.Client';
+
+  constructor(public service: BillingAPIService)
+  {}
+
+  ngOnInit() {
+  }
 }
