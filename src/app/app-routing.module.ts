@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PendingBillsTable } from './pending-bills-table/pending-bills-table.component';
+import { BillsComponent } from './bills/bills.component';
 
 const routes: Routes = [
   {
-    path: 'pending-bills', component: PendingBillsTable, pathMatch: 'full'
+    path: 'pending-bills', component: BillsComponent, pathMatch: 'full'
   },
   {
     path: '', redirectTo: 'pending-bills', pathMatch: 'full'

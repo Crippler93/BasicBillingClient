@@ -1,4 +1,17 @@
-mat-table {
-  display: table;
+table {
   width: 100%;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  background-color: #D0E6F5;
+}
+
+td {
+  cursor: pointer;
 }

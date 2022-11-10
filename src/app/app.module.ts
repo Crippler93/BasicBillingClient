@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { PendingBillsTable } from './pending-bills-table/pending-bills-table.component';
+import { BillsComponent } from './bills/bills.component';
+import { PayBillComponent } from './pay-bill/pay-bill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PendingBillsTable
+    PendingBillsTable,
+    BillsComponent,
+    PayBillComponent
   ],
   imports: [
     BrowserModule,

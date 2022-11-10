@@ -1,0 +1,7 @@
+<h1>Pending Bills</h1>
+<bills-table></bills-table>
+<br>
+<div *ngIf="billState.selectedBill !== null">
+  <h1>Pay selected bill</h1>
+  <pay-bill [billing]="billState.selectedBill"></pay-bill>
+</div>

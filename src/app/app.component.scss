@@ -6,7 +6,7 @@ div.container {
   'aside main'
   'footer footer';
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 1fr 20px;
+  grid-template-rows: 1fr 50px;
 }
 
 aside {
@@ -16,17 +16,21 @@ aside {
   padding: 15px;
 
   a.active {
-    color: tomato;
+    color: #2A8ACB;
   }
 }
 
 main {
-  background-color: blue;
   grid-area: main;
   padding: 50px;
 }
 
 footer {
-  background-color: black;
+  background-color: #2A8ACB;
+  color: white;
   grid-area: footer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

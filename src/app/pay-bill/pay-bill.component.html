@@ -1,0 +1,17 @@
+<form class="form">
+  <mat-form-field class="field" appearance="fill">
+    <mat-label>Client</mat-label>
+    <input [readonly]="true" matInput disabled [value]="billing.client.name">
+  </mat-form-field>
+  <mat-form-field class="field" appearance="fill">
+    <mat-label>Amount</mat-label>
+    <input [readonly]="true" matInput disabled [value]="billing.amount">
+  </mat-form-field>
+  <mat-form-field class="field" appearance="fill">
+    <mat-label>Category</mat-label>
+    <input [readonly]="true" matInput disabled [value]="billing.billDetails.category">
+  </mat-form-field>
+  <button type="button" mat-raised-button color="primary" (click)="payBilling()">
+    <mat-icon aria-hidden="false" aria-label="Payment icon" fontIcon="home">payments</mat-icon> Pay bill
+  </button>
+</form>
