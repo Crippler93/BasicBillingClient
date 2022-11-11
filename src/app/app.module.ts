@@ -9,13 +9,15 @@ import { MaterialModule } from './material.module';
 import { PendingBillsTable } from './pending-bills-table/pending-bills-table.component';
 import { BillsComponent } from './bills/bills.component';
 import { PayBillComponent } from './pay-bill/pay-bill.component';
+import { PaymentHistoryComponent } from './payment-history/payment-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PendingBillsTable,
     BillsComponent,
-    PayBillComponent
+    PayBillComponent,
+    PaymentHistoryComponent
   ],
   imports: [
     BrowserModule,
